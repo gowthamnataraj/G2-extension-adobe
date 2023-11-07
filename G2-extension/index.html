@@ -2,40 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Adobe Illustrator Extension</title>
+  
   <link rel="stylesheet" type="text/css" href="css/app.css">
   <style>
-    /* Add your custom CSS styles here */
+   
   </style>
 </head>
 <body>
   <div class="navbar">
     <div class="navbar-inner">
       <a class="brand" href="index.html"></a>
-      <a class="nav-link" href="jqueryui.html">BACK ID</a>
+      <a class="nav-link" href="jqueryui.html">BACK ID </a>
     </div>
   </div>
-  
-  <h1 style="font-size: 20px; padding: 10px;">Adobe Illustrator Extension</h1>
 
-  <!-- Add UI elements for the Adobe Illustrator extension here -->
-  <div id="extension-options">
-    <h2>Extension Options</h2>
+
+  <div class="scrollable-container">
+    <div id="extension-options">
+      <h2>Extension Options</h2>
     
-    <!-- Pre-Set Croquis dropdown -->
+    
+ 
     <label for="preset-croquis">Pre-Set Croquis:</label>
     <select id="preset-croquis">
-      <!-- Options for pre-set croquis templates will be dynamically added by JavaScript -->
+     
     </select>
     <br>
 
-    <!-- File upload for Adobe Illustrator Sketch files -->
+   
     <label for="upload-sketch-file">Upload Sketch Files:</label>
     <input type="file" id="upload-sketch-file" accept=".ai, .sketch" multiple>
     <ul id="uploaded-files-list"></ul>
     <br>
     
-    <!-- Display uploaded Sketch files in a dropdown -->
     <div id="uploaded-files-dropdown">
       <label for="uploaded-sketch-files">Uploaded Sketch Files:</label>
       <select id="uploaded-sketch-files">
@@ -44,7 +43,7 @@
     </div>
     <br>
     
-    <!-- Smart Zoom Tool checkbox and settings -->
+
     <label for="smart-zoom">Smart Zoom Tool:</label>
     <input type="checkbox" id="smart-zoom">
     <div id="smart-zoom-settings" style="display: none;">
@@ -58,41 +57,33 @@
     </div>
     <br>
     
-    <!-- Symmetry Tool checkbox and settings -->
+    
     <label for "symmetry-tool">Symmetry Tool:</label>
     <input type="checkbox" id="symmetry-tool">
     <div id="symmetry-settings" style="display: none;">
-      <!-- Add Symmetry Tool settings here -->
+
     </div>
     <br>
-    
-    <!-- Preloaded Graphic Styles dropdown -->
+ 
     <label for="graphic-styles">Preloaded Graphic Styles:</label>
     <select id="graphic-styles">
-      <!-- Options for preloaded graphic styles for sketch stylization will be dynamically added by JavaScript -->
+     
     </select>
     <br>
     
-    <!-- Export and Sharing Options -->
-    <h2>Export and Sharing Options</h2>
-    <button id="export-sketch-button">Export Sketch</button>
     
-    <!-- User Help and Documentation -->
+    
+  
     <h2>User Help and Documentation</h2>
     <a href="document.html" id="userDocumentation">User Documentation</a>
   </div>
 
-  <!-- Modal for Export and Sharing -->
+ 
   <div id="export-modal" class="modal" style="display: none;">
     <div class="modal-content">
-      <h3>Export Options</h3>
-      <!-- Add export options here (e.g., file format, resolution, etc.) -->
-      <button id="export-action-button">Export</button>
-      <button id="close-export-modal">Cancel</button>
-    </div>
+     
   </div>
 
-  <!-- Include Bootstrap and custom JavaScript -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
