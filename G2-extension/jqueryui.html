@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Illustrator Extension</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="n2">
+        <div class="n2-inner">
+            <a class="brand" href="index.html"></a>
+            <a class="n2-link" href="index.html">jQuery UI</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <button id="generateTechPack" class="btn btn-primary">Generate Suit Pack</button>
+            <div class="alert alert-danger mt-3">
+                <p><strong>Alert:</strong> DEMO MODEL </p>
+            </div>
+
+            <!-- Adobe Illustrator Extension Options -->
+            <div class="adobe-illustrator-options mt-4">
+                <h2>Adobe Illustrator Extension Features</h2>
+
+                <!-- Master Sketch Linking Dropdown -->
+                <div class="form-group">
+                    <label for="masterSketchLinking">Master Sketch Linking:</label>
+                    <select class="form-control" id="masterSketchLinking">
+                        <option value="none">None</option>
+                        <option value="sketch1">Master Sketch 1</option>
+                        <option value="sketch2">Master Sketch 2</option>
+                        <!-- Add more master sketch options here -->
+                    </select>
+                </div>
+
+                <!-- Automation Toggle -->
+                <div class="form-group">
+                    <label for "automationToggle">Automation Toggle:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="automationToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <!-- Graded Specs Chart Configuration -->
+                <h3>Graded Specs Chart Configuration</h3>
+                <div class="form-group">
+                    <label for="sizeRangeDropdown">Size Range:</label>
+                    <select class="form-control" id="sizeRangeDropdown">
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <!-- Add more size range options here -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="formattingOptions">Formatting Options:</label>
+                    <select class="form-control" id="formattingOptions">
+                        <option value="standard">Standard</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+
+                <!-- Callout Sketch Automation -->
+                <h3>Callout Sketch Automation</h3>
+                <div class="form-group">
+                    <label for="calloutSketchPlacement">Callout Sketch Placement:</label>
+                    <select class="form-control" id="calloutSketchPlacement">
+                        <option value="automatic">Automatic</option>
+                        <option value="manual">Manual</option>
+                    </select>
+                </div>
+
+                <!-- Page Formatting Options (Advanced) -->
+                <h3>Page Formatting Options</h3>
+                <div class="page-formatting-options">
+                    <div class="form-group colorways-option">
+                        <label for="colorwaysDropdown">Colorways:</label>
+                        <select class="form-control" id="colorwaysDropdown">
+                            <option value="none">None</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <div class="form-group automatic-formatting-option">
+                        <label for="automaticFormattingToggle">Automatic Formatting:</label>
+                        <label class="switch">
+                            <input type="checkbox" id="automaticFormattingToggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- User Help and Documentation -->
+                <h3>User Help and Documentation</h3>
+                <a href="document.html" id="userDocumentation">User Documentation</a>
+
+                <!-- Updates and Notifications -->
+                <h3>Updates and Notifications</h3>
+                <div class="form-group">
+                    <label for="notificationOptions">Notification Options:</label>
+                    <select class="form-control" id="notificationOptions">
+                        <option value="email">Email</option>
+                        <option value="popup">Popup</option>
+                        <option value="disabled">Disabled</option>
+                    </select>
+                </div>
+
+                <!-- License or Subscription Management -->
+                <h3>License or Subscription Management</h3>
+                <a href="licence.html">
+                    <button id="manageLicense" class="btn btn-primary">Manage License</button>
+                </a>
+
+                <!-- Custom Color Options (Initially hidden) -->
+                <div class="custom-color-options" style="display: none;">
+                    <h3>Custom Color Options</h3>
+
+                    <!-- Add Custom Color Button -->
+                    <button id="addCustomColorButton" class="btn btn-primary">Add Custom Color</button>
+
+                    <!-- Color Palette Picker -->
+                    <div class="color-palette-section">
+                        <label for="colorPaletteDropdown">Color Palette:</label>
+                        <select class="form-control" id="colorPaletteDropdown">
+                            <option value="summer">Summer Palette</option>
+                            <option value="autumn">Autumn Palette</option>
+                            <option value="winter">Winter Palette</option>
+                            <option value="spring">Spring Palette</option>
+                            <option value="vibrant">Vibrant Colors</option>
+                            <!-- Add more palettes here -->
+                        </select>
+                    </div>
+
+                    <!-- Color Variation Sliders -->
+                    <div class="color-variation-section">
+                        <label for="hueSlider">Hue:</label>
+                        <input type="range" id="hueSlider" min="0" max="360">
+                        <span id="hueValue">0</span> <!-- Added this span element for value display -->
+
+                        <label for="saturationSlider">Saturation:</label>
+                        <input type range="saturationSlider" min="0" max="100">
+                        <span id="saturationValue">0</span> <!-- Added this span element for value display -->
+
+                        <label for="brightnessSlider">Brightness:</label>
+                        <input type="range" id="brightnessSlider" min="0" max="100">
+                        <span id="brightnessValue">0</span> <!-- Added this span element for value display -->
+
+                        <label for="opacitySlider">Opacity:</label>
+                        <input type="range" id="opacitySlider" min="0" max="100">
+                        <span id="opacityValue">0</span> <!-- Added this span element for value display -->
+                    </div>
+
+                    <!-- Save Custom Color Options -->
+                    <button id="saveCustomColorOptions" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="js/main2.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+    /* Reset default margins and padding */
+    body, div, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Center the navbar content */
+    .navbar {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the black navigation bar */
+    .navbar-inner {
+        background-color: #0070c9;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-inner a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Style the black box container */
+    .n2 {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        display: block;
+        width: 30%;
+        margin: 20px auto 0;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .n2 a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Style the "Generate Tech Pack" button */
+    #generateTechPack {
+        background-color: #0070c9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #generateTechPack:hover {
+        background-color: #004f9b;
+    }
+
+    /* Style the alert box */
+    .ui-state-error {
+        background-color: #f2dede;
+        color: #a94442;
+        border: 1px solid #ebccd1;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .ui-icon {
+        float: left;
+        margin-right: 10px;
+    }
+
+    /* Style the Adobe Illustrator Extension Options */
+    .adobe-illustrator-options {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    /* Style labels */
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Style select inputs */
+    select, input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    /* Style the Automation Toggle switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 34px;
+        transition: 0.4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        transition: 0.4s;
+    }
+
+    input:checked + .slider {
+        background-color: #0070c9;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+    /* Style buttons */
+    button {
+        background-color: #0070c9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #004f9b;
+    }
+

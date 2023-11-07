@@ -1,0 +1,142 @@
+/* Reset some default styles */
+body, h1, h2, label, select, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar-inner {
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+  padding: 40px;
+  text-align: center;
+  color: #333;
+}
+
+#extension-options {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#extension-options h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+select, input[type="checkbox"], input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Improved button hover effect */
+button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Animate the Export Modal */
+#export-modal {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate the Smart Zoom Tool settings */
+.settings {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+#smart-zoom:checked + .settings,
+#symmetry-tool:checked + .settings {
+  max-height: 1000px; /* Adjust the max-height based on your content */
+}
+
+/* Adobe Extension UI Styles */
+#extension-options .card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#extension-options .card label {
+  font-weight: bold;
+}
+
+#extension-options .card select,
+#extension-options .card input[type="checkbox"],
+#extension-options .card input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#extension-options .card button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
