@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Navbar styles */
+
 .navbar {
   background-color: #333;
   color: #fff;
@@ -34,7 +34,7 @@ body {
   margin-left: 20px;
 }
 
-/* Container styles */
+
 .scrollable-container {
   width: 80%;
   margin: 20px auto;
@@ -43,13 +43,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Extension Options Header */
+
 #extension-options h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-/* Form element styles */
+
 label {
   font-weight: bold;
   margin-top: 10px;
@@ -66,7 +66,7 @@ select, input[type="file"], input[type="checkbox"] {
   outline: none;
 }
 
-/* Uploaded Files List */
+
 ul#uploaded-files-list {
   list-style: none;
   margin-top: 10px;
@@ -76,12 +76,12 @@ ul#uploaded-files-list li {
   margin-bottom: 5px;
 }
 
-/* Uploaded Files Dropdown */
+
 #uploaded-files-dropdown select {
   margin-top: 10px;
 }
 
-/* Modal styles */
+
 .modal {
   position: fixed;
   top: 0;
@@ -102,12 +102,12 @@ ul#uploaded-files-list li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Range input styles */
+
 input[type="range"] {
   width: 100%;
 }
 
-/* Hide Smart Zoom and Symmetry settings by default */
+
 #smart-zoom-settings, #symmetry-settings {
   display: none;
 }
