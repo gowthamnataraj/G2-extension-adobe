@@ -3,14 +3,68 @@
 Adobe Illustrator Extension
 This repository contains code for an Adobe Illustrator extension that enhances your workflow and provides various features for fashion sketching and design. The extension includes options for managing croquis templates, file uploads, Smart Zoom Tool, Symmetry Tool, preloaded graphic styles, and exporting/sharing your sketches.
 
-Installation
-To use this Adobe Illustrator extension, follow these installation steps:
+# G2 Fashion Extension for Adobe Illustrator
 
-Download the repository to your local machine.
-Locate the "Adobe Illustrator Extensions" folder on your system.
-On Windows: C:\Program Files\Adobe\Adobe Illustrator [version]\Plug-ins\
-On macOS: /Applications/Adobe Illustrator [version]/Plug-ins/
-Copy the extension files to the "Adobe Illustrator Extensions" folder.
+## Installation
+
+### Installing Manually
+
+1. **Download the Extension Files**
+   - Head to the [GitHub repository](https://github.com/gowthamnataraj/G2-extension-adobe).
+   - Click on the "Download" button and select "Download ZIP."
+   - Extract the contents of the ZIP file to a location of your choice.
+
+2. **Copy the Files to the CEP Extension Folder**
+
+   - **Windows:**
+     - Navigate to `C:\Program Files\Adobe\Adobe Illustrator CC 2019\Support Files\Required`.
+     - If the `CEP` extension folder doesn't exist, simply create one in `C:\Program Files\Adobe\Adobe Illustrator CC 2019\Support Files\Required`.
+
+   - **macOS:**
+     - Open Finder and go to `/Library/Application Support/Adobe/CEP/extensions`.
+     - If the `CEP` extension folder doesn't exist, simply create one in `/Library/Application Support/Adobe`.
+
+### Enabling Debug Mode
+
+Before using the extension, you can enable debug mode to help with troubleshooting.
+
+**Windows:**
+
+1. Open the Windows Registry Editor by running `regedit`.
+
+2. Navigate to `HKEY_CURRENT_USER/Software/Adobe/CSXS.11` (or `CSXS.8` for CC 2018).
+
+3. Add a new entry:
+   - Name: `PlayerDebugMode`
+   - Type: `String`
+   - Value: `1`
+
+**macOS:**
+
+1. Open the Terminal.
+
+2. Type the following command:
+   ```sh
+   defaults write com.adobe.CSXS.11 PlayerDebugMode 1
+   ```
+   - For CC 2018, use `com.adobe.CSXS.8`.
+
+   - Note: The plist file is also located at `/Users/yourusername/Library/Preferences/com.adobe.CSXS.11.plist` (or `com.adobe.CSXS.8` for CC 2018).
+
+## Usage
+
+1. Launch Adobe Illustrator.
+
+2. Go to the "Window" menu.
+
+3. Find and click on "G2 Fashion Extension" to open the extension panel.
+
+4. Follow the on-screen instructions to use the extension for fashion-related tasks.
+
+
+---
+
+This README should provide clear instructions for users to download, install, enable debug mode, and use your G2 Fashion Extension for Adobe Illustrator. Remember to replace "yourusername" with your actual GitHub username, and ensure that the GitHub repository exists with the required files.
 Usage
 Once the extension is installed, you can access its features from within Adobe Illustrator. Here's a brief overview of what each feature does:
 
@@ -38,8 +92,6 @@ Fork the repository on GitHub.
 Make your changes and improvements.
 Create a pull request with a detailed description of your changes.
 We welcome contributions and feedback from the community to enhance the extension further.
-
-License
 
 
 Contact
