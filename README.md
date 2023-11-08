@@ -1,7 +1,7 @@
 "# G2-extension-adobe" 
 
 Adobe Illustrator Extension
-This repository contains code for an Adobe Illustrator extension that enhances your workflow and provides various features for fashion sketching and design. The extension includes options for managing croquis templates, file uploads, Smart Zoom Tool, Symmetry Tool, preloaded graphic styles, and exporting/sharing your sketches.
+This repository contains code for an Adobe Illustrator extension that enhances your workflow and provides various features for fashion sketching and design. The extension includes options for managing croquis templates, file uploads, Smart Zoom Tool, Symmetry Tool, preloaded graphic styles.
 
 # G2 Fashion Extension for Adobe Illustrator
 
