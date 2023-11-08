@@ -26,9 +26,7 @@ Enable the Symmetry Tool for symmetrical design work.
 Customize symmetry settings for your needs.
 Preloaded Graphic Styles
 Apply preloaded graphic styles to stylize your sketches and designs.
-Export and Sharing Options
-Export your fashion sketches to different file formats and resolutions.
-Choose your preferred sharing method.
+
 User Help and Documentation
 Access user documentation and tutorials for assistance.
 Please refer to the User Documentation for more detailed instructions on how to use these features.
